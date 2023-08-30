@@ -58,7 +58,7 @@ export const ReportValuation = () => {
     // }
     return (
         <div className="report-content-value">
-            <div className="report-content-content-header">
+            <div className="report-content-content-header" id="item-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M122.7,25.9,42,42,25.9,122.7a8,8,0,0,0,2.2,7.2L132.5,234.3a7.9,7.9,0,0,0,11.3,0l90.5-90.5a7.9,7.9,0,0,0,0-11.3L129.9,28.1A8,8,0,0,0,122.7,25.9Z" opacity="0.2"></path><path d="M122.7,25.9,42,42,25.9,122.7a8,8,0,0,0,2.2,7.2L132.5,234.3a7.9,7.9,0,0,0,11.3,0l90.5-90.5a7.9,7.9,0,0,0,0-11.3L129.9,28.1A8,8,0,0,0,122.7,25.9Z" fill="none" stroke="#5C53C5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
@@ -82,7 +82,7 @@ export const ReportValuation = () => {
           </ChartComponent>
             </div>
             <div className="report-content-valuation">
-                <button className="collapsible">Valuation</button>
+                <button className="collapsible" id="item-2-1">Valuation</button>
                 <div className="table-content">
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -214,7 +214,7 @@ export const ReportValuation = () => {
                     </TableContainer>
                 </div>
             </div>
-            <div className="report-content-valuation-insight">
+            <div className="report-content-valuation-insight" id="item-2-2">
                 <button className="collapsible">Valuation Insights</button>
                 <div className="table-content">
                     <div className="insight-part">

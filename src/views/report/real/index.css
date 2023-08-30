@@ -1,0 +1,14 @@
+.report-container {
+    padding: 10px 20px;
+    width: 100%;
+}
+.report-content {
+    
+    display: flex;
+}
+.report-content-left {
+    flex: 6;
+}
+.report-content-right {
+    flex: 4;
+}

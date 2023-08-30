@@ -1,0 +1,16 @@
+.css-zow5z4-MuiGrid-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account_alertBox__NrEaj {
+    text-align: center;
+}
+.account-create-btn {
+    background-color: #5c53c5;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+}

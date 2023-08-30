@@ -3,7 +3,7 @@
     width: 100%;
 }
 .report-content {
-    column-gap: 2rem;
+    
     display: flex;
 }
 .report-content-left {
@@ -11,4 +11,7 @@
 }
 .report-content-right {
     flex: 4;
+}
+.e-acrdn-header{
+    background: none !important;
 }

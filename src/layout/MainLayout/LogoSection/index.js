@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 // material-ui
 import { ButtonBase } from '@mui/material';
 
-// import avatar from "./logo.png";
+import avatar from "./logo.png";
 // project imports
 import config from 'config';
-import Logo from 'ui-component/Logo';
+// import Logo from 'ui-component/Logo';
 import { MENU_OPEN } from 'store/actions';
 
 // ==============================|| MAIN LOGO ||============================== //
@@ -17,8 +17,8 @@ const LogoSection = () => {
   const dispatch = useDispatch();
   return (
     <ButtonBase disableRipple onClick={() => dispatch({ type: MENU_OPEN, id: defaultId })} component={Link} to={config.defaultPath}>
-      <Logo />
-      {/* <img src = {avatar} alt = "loading..." /> */}
+      {/* <Logo /> */}
+      <img src = {avatar} alt = "loading..." />
     </ButtonBase>
   );
 };

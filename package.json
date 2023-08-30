@@ -12,8 +12,6 @@
     "@mui/material": "^5.8.6",
     "@mui/system": "^5.8.6",
     "@mui/utils": "^5.8.6",
-    "@mui/x-charts": "^6.0.0-alpha.8",
-    "@syncfusion/ej2-react-charts": "^22.2.11",
     "@syncfusion/ej2-react-navigations": "^22.2.11",
     "@tabler/icons": "^1.72.0",
     "apexcharts": "^3.35.3",

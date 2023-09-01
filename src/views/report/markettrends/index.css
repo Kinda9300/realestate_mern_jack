@@ -63,42 +63,48 @@
     background-color: #f0eeff;
 }
 
-.summary-duv-p {
-    text-align: center;
-}
 
-.climate-risk-header {
-    display: flex;
-    align-items: center;
-    column-gap: 0.75rem;
-}
+@media screen and (max-width: 800px) {
+    .css-1o42tkx {
+        padding: 10px !important;
+    }
 
-.environment-child-part {
-    display: flex;
-    justify-content: space-between;
-}
-
-.right {
-    text-align: right;
-}
-
-.flood-map-div {
-    width: 100%;
-    height: 300px;
-    overflow: auto;
-    background-color: #ddd;
-}
-
-@media screen and (max-width: 640px) {
-    .climate-div {
+    .css-gg4vpm {
+        display: flex;
         flex-direction: column;
     }
 
-    .radio-div {
-        margin-right: -20px;
+    .css-1afcqb7 {
+        width: 100%;
+        text-align: center;
     }
 
-    th {
-        padding-right: 0px !important;
+    #numberpart1 {
+        font-size: 20px;
+    }
+
+    #numberpart {
+        font-size: 20px;
+        color: white;
+    }
+
+    #plunk-remodal {
+        text-align: center;
+    }
+
+    #plunk-remodal-container {
+        text-align: center;
+    }
+
+    .css-126n10b {
+        display: none;
+    }
+
+    .css-1kfvdq9-MuiTable-root {
+        min-width: 180px;
+    }
+
+    .css-phgkob-MuiPaper-root-MuiTableContainer-root {
+        height: 400px;
     }
 }

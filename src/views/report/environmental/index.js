@@ -293,7 +293,7 @@ const climatecomp = () => {
                 <span className="summary-duv-p">Hazard Summary</span>
                 <div>
                     <PieChart
-                        
+                            id="climate-pie"
                             series={[{ 
                                 data: [{ value: 10 }, { value: 15 }, { value: 20 }], 
                                 innerRadius: 15,
@@ -302,8 +302,8 @@ const climatecomp = () => {
                                 cornerRadius: 5,
                                 startAngle: -90,
                                 endAngle: 180,
-                                cx: 100,
-                                cy: 100,
+                                cx: 70,
+                                cy: 70,
                                 
 
                             }]}

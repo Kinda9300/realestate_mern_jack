@@ -219,7 +219,7 @@ const single_table = () => {
 const climate_risk = () => {
     return (
         <div className="climate-risk-header">
-            <span>Climate Risk</span>
+            <span>Tax Information</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" className="">
                     <rect width="256" height="256" fill="none"></rect>
                     <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle>
@@ -287,7 +287,7 @@ const tablecomp = () => {
 export const Financial = () => {
     return (
         <div className='report-content-content'>
-            <div className="report-content-content-header">
+            <div className="report-content-content-header" id="item-8">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" >
                 <rect width="256" height="256" fill="none"></rect><path d="M88,216a24,24,0,0,0,17.9-40h112A24,24,0,0,1,200,216Z" opacity="0.2"></path>
                 <path d="M200,176V64a23.9,23.9,0,0,0-24-24H40" fill="none" stroke="#5C53C5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
@@ -297,28 +297,28 @@ export const Financial = () => {
                 </svg>
                 <span>Financial</span>
             </div>
-            <div className="permit-accordian-div" id="item-5-3">
+            <div className="permit-accordian-div" id="item-8-1">
                 <AccordionComponent>
                     <AccordionItemsDirective>
-                        <AccordionItemDirective header="Flood Data Details" content={childcomp} />
+                        <AccordionItemDirective header="Liens" content={childcomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" >
+            <div className="permit-accordian-div" id="item-8-2">
                 <AccordionComponent>
                     <AccordionItemsDirective>
-                        <AccordionItemDirective header="Long-Term Rental Listings" content={tablecomp} />
+                        <AccordionItemDirective header="Loan & Transaction History" content={tablecomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" id="item-5-3">
+            <div className="permit-accordian-div" id="item-8-3">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header={climate_risk} content={childcomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" id="item-5-3">
+            <div className="permit-accordian-div" id="item-8-4">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header="Tax History" content={single_table} />

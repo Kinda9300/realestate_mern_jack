@@ -8,8 +8,8 @@ export const ReportContent = () => {
     //   }, []);
 
     return (
-        <div className="report-content-content">
-            <div className="report-content-content-header">
+        <div className="report-content-content" id="item-12">
+            <div className="report-content-content-header" id="item-12-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" style={{"marginTop": "3px"}}>
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M200,56H56A23.9,23.9,0,0,0,32,80V192a23.9,23.9,0,0,0,24,24H200a23.9,23.9,0,0,0,24-24V80A23.9,23.9,0,0,0,200,56ZM164,184H92a20,20,0,0,1,0-40h72a20,20,0,0,1,0,40Z" opacity="0.2"></path>

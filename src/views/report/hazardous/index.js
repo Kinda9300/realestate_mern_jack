@@ -2,8 +2,8 @@ import "./index.css";
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 
-import GoogleMapReact from 'google-map-react';
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// import GoogleMapReact from 'google-map-react';
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -19,7 +19,7 @@ const tr1 = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableBody>
             <TableRow
-                key="0"
+                
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                 <TableCell component="th" scope="row">
@@ -256,8 +256,8 @@ const tablecomp = () => {
 const climate_risk = () => {
     return (
         <div className="climate-risk-header">
-            <span>Nearby Hazardous Materials Facilities</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" className="">
+            <span className="climate-risk-nearby-span">Nearby Hazardous Materials Facilities</span>
+            <svg className="hidden-svg-question" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
                     <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle>
                     <circle cx="128" cy="180" r="12"></circle>
@@ -329,13 +329,13 @@ const radoncomp = () => {
 
 export const Hazardous = () => {
    
-    const defaultProps = {
-        center: {
-          lat: 10.99835602,
-          lng: 77.01502627
-        },
-        zoom: 11
-      };
+    // const defaultProps = {
+    //     center: {
+    //       lat: 10.99835602,
+    //       lng: 77.01502627
+    //     },
+    //     zoom: 11
+    //   };
     return (
         <div className="report-content-content">
             <div className="report-content-content-header" id="item-6">
@@ -354,15 +354,15 @@ export const Hazardous = () => {
                     <path d="M128,144v-8a28,28,0,1,0-28-28" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
                 </svg>
             </div>
-            <div className="permit-accordian-div">
+            <div className="permit-accordian-div" id="item-6-1">
                 <AccordionComponent id="env-parent">
                     <AccordionItemsDirective id="env-child">
                         <AccordionItemDirective header='Radon & Air Quality(Strafford Country)' id="env-strict-part"    content={radoncomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="report-content-valuation">
-                <button className="collapsible" id="item-2-1">Valuation</button>
+            <div className="report-content-valuation" id="item-6-2">
+                <button className="collapsible" id="item-2-1">EPA Environmental Ratings</button>
                 <div className="table-content">
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -497,7 +497,7 @@ export const Hazardous = () => {
             
             <div className="permit-accordian-div">
                 <div id="map">
-                    <GoogleMapReact
+                    {/* <GoogleMapReact
                         bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
                         defaultCenter={defaultProps.center}
                         defaultZoom={defaultProps.zoom}
@@ -507,11 +507,11 @@ export const Hazardous = () => {
                         lng={30.337844}
                         text="My Marker"
                         />
-                    </GoogleMapReact>
+                    </GoogleMapReact> */}
                 </div>
             </div>
 
-            <div className="permit-accordian-div" >
+            <div className="permit-accordian-div" id="item-6-3">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header={climate_risk} content={tablecomp} />

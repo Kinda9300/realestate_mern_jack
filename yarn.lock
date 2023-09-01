@@ -2161,6 +2161,15 @@
     "@syncfusion/ej2-base" "~22.2.10"
     "@syncfusion/ej2-buttons" "~22.2.9"
 
+"@syncfusion/ej2-progressbar@22.2.5":
+  version "22.2.5"
+  resolved "https://registry.npmjs.org/@syncfusion/ej2-progressbar/-/ej2-progressbar-22.2.5.tgz"
+  integrity sha512-ruWASf/AgwjKYEKXRfNcnC/faW6VCpyfWDUbJrALa0zLXLQskgllfdA69lnX34k2NKyr24o6S1Y4OXORr3idaA==
+  dependencies:
+    "@syncfusion/ej2-base" "~22.2.5"
+    "@syncfusion/ej2-data" "~22.2.5"
+    "@syncfusion/ej2-svg-base" "~22.2.5"
+
 "@syncfusion/ej2-react-base@~22.2.5":
   version "22.2.5"
   resolved "https://registry.npmjs.org/@syncfusion/ej2-react-base/-/ej2-react-base-22.2.5.tgz"
@@ -2186,6 +2195,15 @@
     "@syncfusion/ej2-navigations" "22.2.11"
     "@syncfusion/ej2-react-base" "~22.2.5"
 
+"@syncfusion/ej2-react-progressbar@^22.2.5":
+  version "22.2.5"
+  resolved "https://registry.npmjs.org/@syncfusion/ej2-react-progressbar/-/ej2-react-progressbar-22.2.5.tgz"
+  integrity sha512-2G/MvGwFxvj9saLNku9SCr5C/yp9Gam7GKMlSbsKNCGY2+m0SDuCdT7x3lGGFjBb/BK6gz/+qT4vEiDMC35eAA==
+  dependencies:
+    "@syncfusion/ej2-base" "~22.2.5"
+    "@syncfusion/ej2-progressbar" "22.2.5"
+    "@syncfusion/ej2-react-base" "~22.2.5"
+
 "@syncfusion/ej2-splitbuttons@~22.2.8":
   version "22.2.8"
   resolved "https://registry.npmjs.org/@syncfusion/ej2-splitbuttons/-/ej2-splitbuttons-22.2.8.tgz"
@@ -2194,7 +2212,7 @@
     "@syncfusion/ej2-base" "~22.2.5"
     "@syncfusion/ej2-popups" "~22.2.7"
 
-"@syncfusion/ej2-svg-base@~22.2.8":
+"@syncfusion/ej2-svg-base@~22.2.5", "@syncfusion/ej2-svg-base@~22.2.8":
   version "22.2.8"
   resolved "https://registry.npmjs.org/@syncfusion/ej2-svg-base/-/ej2-svg-base-22.2.8.tgz"
   integrity sha512-HEuYXxNELG7oDbLsvqUpgoAZmkchKYv1QZEBBDOFIsGAYgBb1nCdqLdsvgHNRj5lsIxWTODZenpuFKoAW7A7pw==

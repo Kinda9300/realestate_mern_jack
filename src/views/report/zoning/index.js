@@ -112,8 +112,13 @@ export const Zoning = () => {
             </div>
             <div>
                 <div id="map">
+<<<<<<< HEAD
                 {/* <GoogleMapReact
                     bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
+=======
+                <GoogleMapReact
+                    bootstrapURLKeys={{ key: "AIzaSyD-keqBePy0D5zfeQe1n617aJ87q956NS4" }}
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
                 >

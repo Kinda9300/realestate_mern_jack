@@ -1,15 +1,19 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 
+<<<<<<< HEAD
 //redux part
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setValue } from '../../../store/slice/homeslice';
 
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 import './index.css';
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 import { Button, Typography } from '@mui/material';
+<<<<<<< HEAD
 // import { PlunkMarketInsightChart } from './plunkMarektInsightChart';
 import { HomeCompareChart } from './homeCompareChart';
 import { PlunkReModelValueChart } from './plunkRemodelValueChart';
@@ -54,6 +58,13 @@ const PlunkHomeValue = () => {
   }, [value]);
 
 
+=======
+import { PlunkMarketInsightChart } from './plunkMarektInsightChart';
+import { HomeCompareChart } from './homeCompareChart';
+import { PlunkReModelValueChart } from './plunkRemodelValueChart';
+
+const PlunkHomeValue = () => {
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -78,14 +89,21 @@ const PlunkHomeValue = () => {
         }}
       >
         <Box
+<<<<<<< HEAD
           id="numberpart1"
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
           sx={{
             color: 'black',
             fontSize: '30px',
             marginBottom: '15px'
           }}
         >
+<<<<<<< HEAD
           $417722.54
+=======
+          $999,440.32
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         </Box>
         <Box
           sx={{
@@ -110,6 +128,7 @@ const PlunkHomeValue = () => {
   );
 };
 const PlunkMarketInsight = () => {
+<<<<<<< HEAD
   // const dispatch = useDispatch();
 
   // const [insightarr, setInsightarr] = useState([]);
@@ -126,6 +145,8 @@ const PlunkMarketInsight = () => {
   //   setInsightarr(!insights.values ? "" : insights.values);
   // }, [insights])
 
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -152,6 +173,7 @@ const PlunkMarketInsight = () => {
       >
         for 98115 - August 2nd, 2023
       </Box>
+<<<<<<< HEAD
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} id="fixed-high-table" aria-label="simple table">
           <TableBody>
@@ -188,10 +210,17 @@ const PlunkMarketInsight = () => {
         </Table>
       </TableContainer>
       {/* <PlunkMarketInsightChart id="insig"/> */}
+=======
+      <PlunkMarketInsightChart />
+      <PlunkMarketInsightChart />
+      <PlunkMarketInsightChart />
+      <PlunkMarketInsightChart />
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
     </Box>
   );
 };
 const PlunkHomeCompare = () => {
+<<<<<<< HEAD
 
   // const addressObj = {
   //   fips: '04013',
@@ -212,6 +241,8 @@ const PlunkHomeCompare = () => {
   //   });
   // }, [dispatch]);
 
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -245,7 +276,10 @@ const PlunkHomeCompare = () => {
 const PlunkRemodelValue = () => {
   return (
     <Box
+<<<<<<< HEAD
       id="plunk-remodal"
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
       sx={{
         borderRadius: 8,
         padding: 10,
@@ -263,7 +297,10 @@ const PlunkRemodelValue = () => {
         Plunk Remodel Value™
       </Box>
       <Box
+<<<<<<< HEAD
         id="plunk-remodal-container"
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         sx={{
           display: 'flex',
           justifyContent: 'space-between'
@@ -293,7 +330,10 @@ const PlunkRemodelValue = () => {
               Plunk Remodel Value™
             </Typography>
             <Typography
+<<<<<<< HEAD
               id="numberpart"
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
               sx={{
                 color: 'black',
                 fontSize: '30px'
@@ -359,6 +399,7 @@ const PlunkRemodelValue = () => {
   );
 };
 
+<<<<<<< HEAD
 const remodal = () => {
   axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
     dispatch(setValue(res.data));
@@ -372,33 +413,59 @@ export const MarketTrends = () => {
         <span>Market Trends - Dover, NH (03820)</span>
       </div>
       <div className="permit-accordian-div" id="item-14-1">
+=======
+export const MarketTrends = () => {
+  return (
+    <div className="report-content-content">
+      <div className="report-content-content-header">
+        <span>Market Trends - Dover, NH (03820)</span>
+      </div>
+      <div className="permit-accordian-div">
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Home Value™" content={PlunkHomeValue} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
+<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-2">
+=======
+      <div className="permit-accordian-div">
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Market Insights™" content={PlunkMarketInsight} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
+<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-3">
+=======
+      <div className="permit-accordian-div">
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Home Compare" content={PlunkHomeCompare} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
+<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-4">
         <AccordionComponent onClick={remodal}>
+=======
+      <div className="permit-accordian-div">
+        <AccordionComponent>
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Remodel Value™" content={PlunkRemodelValue} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
       <div className="font-size-xs gray-dark mt-s mb-s">Source(s): Zoneomics</div>
     </div>
   );

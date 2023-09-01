@@ -23,11 +23,19 @@ const ArrestsByOffense = () => {
 
 export const Crime = () => {
   return (
+<<<<<<< HEAD
     <div className="report-content-content" id="item-13">
       <div className="report-content-content-header" id="item-13-1">
         <span>Crime</span>
       </div>
       <div className="permit-accordian-div" id="item-13-2">
+=======
+    <div className="report-content-content">
+      <div className="report-content-content-header">
+        <span>Crime</span>
+      </div>
+      <div className="permit-accordian-div">
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Arrests by Offense" content={ArrestsByOffense} />

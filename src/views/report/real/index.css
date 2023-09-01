@@ -4,7 +4,7 @@
 }
 
 .report-content {
-    column-gap: 2rem;
+    
     display: flex;
 }
 
@@ -13,6 +13,7 @@
 }
 
 .report-content-right {
+<<<<<<< HEAD
     flex: 3;
 }
 
@@ -150,4 +151,10 @@
     .dialog-part {
         column-gap: 0.5rem;
     }
+=======
+    flex: 4;
+}
+.e-acrdn-header{
+    background: none !important;
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 }

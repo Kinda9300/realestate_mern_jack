@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// import { useEffect } from 'react';
+
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 // material-ui
 import { Grid } from '@mui/material';
 
@@ -5,6 +10,7 @@ import { Grid } from '@mui/material';
 import { gridSpacing } from 'store/constant';
 
 // import These Component
+<<<<<<< HEAD
 import { ReportHeader } from "../reportheader";
 import {ReportValuation} from "../reportvaluation";
 import {ReportPermits} from "../reportpermits";
@@ -261,7 +267,49 @@ const RealReport = () => {
                   </nav>
                 </div>
             </div>
+=======
+import { ReportHeader } from '../reportheader';
+import { ReportContent } from '../reportcontent';
+import { ReportValuation } from '../reportvaluation';
+import { ReportPermits } from '../reportpermits';
+import { Zoning } from '../zoning';
+import { Environmental } from '../environmental';
+import { MarketTrends } from '../markettrends';
+import { Crime } from '../crime';
+import { ReportDemographics } from '../reportdemographics';
+// import custom css
+import './index.css';
+
+// ==============================|| DEFAULT DASHBOARD ||============================== //
+
+const RealReport = () => {
+  //   const [isLoading, setLoading] = useState(true);
+  //   useEffect(() => {
+  //     setLoading(false);
+  //   }, []);
+
+  return (
+    <Grid container spacing={gridSpacing}>
+      <div className="report-container">
+        <div>
+          <span>Back</span>
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         </div>
+        <div className="report-content">
+          <div className="report-content-left">
+            <ReportHeader />
+            <ReportContent />
+            <ReportValuation />
+            <ReportPermits />
+            <Zoning />
+            <Environmental />
+            <ReportDemographics />
+            <Crime />
+            <MarketTrends />
+          </div>
+          <div className="report-content-right"></div>
+        </div>
+      </div>
     </Grid>
   );
 };

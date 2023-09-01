@@ -8,13 +8,17 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+<<<<<<< HEAD
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, BubbleSeries } from '@syncfusion/ej2-react-charts';
 
  
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 
 
+<<<<<<< HEAD
 export const ReportValuation = () => {
 
     const [valuation, setValuation] = useState({});
@@ -43,6 +47,8 @@ export const ReportValuation = () => {
     const primaryxAxis = { title: 'Literacy Rate', minimum: 60, maximum: 100, interval: 5 };
     const primaryyAxis = { title: 'GDP growth rate', minimum: -2, maximum: 16, interval: 2 };
 
+=======
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
     useEffect(()=>{
         fetch('https://api.rentcast.io/v1/avm/value?address=5500%20Grand%20Lake%20Drive%2C%20San%20Antonio%2C%20TX%2C%2078244&propertyType=Single%20Family&bedrooms=4&bathrooms=2&squareFootage=1600&compCount=5', options)
             .then(response => response.json())
@@ -108,7 +114,7 @@ export const ReportValuation = () => {
         }
     return (
         <div className="report-content-value">
-            <div className="report-content-content-header" id="item-2">
+            <div className="report-content-content-header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M122.7,25.9,42,42,25.9,122.7a8,8,0,0,0,2.2,7.2L132.5,234.3a7.9,7.9,0,0,0,11.3,0l90.5-90.5a7.9,7.9,0,0,0,0-11.3L129.9,28.1A8,8,0,0,0,122.7,25.9Z" opacity="0.2"></path><path d="M122.7,25.9,42,42,25.9,122.7a8,8,0,0,0,2.2,7.2L132.5,234.3a7.9,7.9,0,0,0,11.3,0l90.5-90.5a7.9,7.9,0,0,0,0-11.3L129.9,28.1A8,8,0,0,0,122.7,25.9Z" fill="none" stroke="#5C53C5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
@@ -123,15 +129,10 @@ export const ReportValuation = () => {
                 </svg>
             </div>
             <div className="report-content-chart">
-            <ChartComponent id='charts' primaryXAxis={primaryxAxis} primaryYAxis={primaryyAxis} title='GDP vs Literacy Rate'>
-            <Inject services={[BubbleSeries]}/>
-            <SeriesCollectionDirective>
-                <SeriesDirective dataSource={data} xName='x' yName='y' size='size' type='Bubble' name='pound'>
-                </SeriesDirective>
-            </SeriesCollectionDirective>
-          </ChartComponent>
+
             </div>
             <div className="report-content-valuation">
+<<<<<<< HEAD
                 
                 <AccordionComponent>
                     <AccordionItemsDirective>
@@ -145,6 +146,153 @@ export const ReportValuation = () => {
                         <AccordionItemDirective header='Valuation Insights' content={insightComp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
+=======
+                <button className="collapsible">Valuation</button>
+                <div className="table-content">
+                    <TableContainer component={Paper}>
+                        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                            
+                            <TableBody>
+                          
+                                <TableRow
+                                    key="0"
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">$1,127,300</p>
+                                            <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow
+                                    key="0"
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">$1,127,300</p>
+                                            <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow
+                                    key="0"
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">$1,127,300</p>
+                                            <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow
+                                    key="0"
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">$1,127,300</p>
+                                            <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow
+                                    key="0"
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    >
+                                    <TableCell component="th" scope="row">
+                                        <p className="mb-xs">$1,127,300</p>
+                                            <p className="mb-xs font-size-xs">Valuation</p>
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,099.355</p>
+                                        <p className="mb-xs font-size-xs">Min</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">$1,185,754</p>
+                                        <p className="mb-xs font-size-xs">Max</p>
+
+                                    </TableCell>
+                                    <TableCell align="left">
+                                        <p className="mb-xs">98</p>
+                                        <p className="mb-xs font-size-xs">Confidence</p>
+
+                                    </TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                </div>
+            </div>
+            <div className="report-content-valuation-insight">
+                <button className="collapsible">Valuation Insights</button>
+                <div className="table-content">
+                    <div className="insight-part">
+                        <span>Avg.Valuation</span><span>$1,090,003</span>
+                    </div>
+                    <div className="insight-part">
+                        <span>Avg.Min</span><span>$995,558</span>
+                    </div>
+                    <div className="insight-part">
+                        <span>Avg.Max</span><span>$1,195,667</span>
+                    </div>
+                </div>
+>>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
             </div>
             <div className="font-size-xs mt-s dark-gray">
                 Source(s): ATTOM Data, Melissa Data, AirDNA, others

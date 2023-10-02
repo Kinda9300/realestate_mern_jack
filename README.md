@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+<!-- Something for test ip tracking -->
+<!-- now trying to check the ip -->
+
 In the project directory, you can run:
 
 ### `npm install`

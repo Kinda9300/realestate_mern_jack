@@ -20,20 +20,20 @@ const tr1 = () => {
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                 <TableCell component="th" scope="row">
-                        <p className="mb-xs">$1,127,300</p>
+                    <p className="mb-xs">$1,127,300</p>
                         <p className="mb-xs font-size-xs">Valuation</p>
                 </TableCell>
-                <TableCell className="hidden-th" align="left">
+                <TableCell align="left">
                     <p className="mb-xs">$1,099.355</p>
                     <p className="mb-xs font-size-xs">Min</p>
 
                 </TableCell>
-                <TableCell className="hidden-th" align="left">
+                <TableCell align="left">
                     <p className="mb-xs">$1,185,754</p>
                     <p className="mb-xs font-size-xs">Max</p>
 
                 </TableCell>
-                <TableCell className="hidden-th" align="left">
+                <TableCell align="left">
                     <p className="mb-xs">98</p>
                     <p className="mb-xs font-size-xs">Confidence</p>
 
@@ -55,7 +55,8 @@ const childcomp = () => {
     )
 }
 const tablecomp = () => {
-    return (            
+    return (
+                       
             <AccordionComponent>
                 <AccordionItemsDirective>
                     <AccordionItemDirective header = {tr1} content={childcomp}/>
@@ -66,7 +67,8 @@ const tablecomp = () => {
                     <AccordionItemDirective header = {tr1} content={childcomp}/>
                     <AccordionItemDirective header = {tr1} content={childcomp}/>
                 </AccordionItemsDirective>
-            </AccordionComponent>                    
+            </AccordionComponent>
+                           
     )
 }
 
@@ -76,7 +78,7 @@ export const ReportPermits = () => {
   
     return (
         <div className="report-content-content">
-            <div className="report-content-content-header" id="item-3">
+            <div className="report-content-content-header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M156,72l76,76V80a8,8,0,0,0-8-8Z" opacity="0.2"></path>
@@ -96,10 +98,11 @@ export const ReportPermits = () => {
                     <path d="M128,144v-8a28,28,0,1,0-28-28" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
                 </svg>
             </div>
-            <div className="permit-accordian-div" id="item-3-1">
+            <div className="permit-accordian-div">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header='Permits History' content={tablecomp} />
+
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>

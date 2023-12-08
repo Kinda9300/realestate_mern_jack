@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client';
 
 // third party
 import { BrowserRouter } from 'react-router-dom';
-import { Provider as ReduxProvider } from 'react-redux';
+import { Provider } from 'react-redux';
 
 // project imports
 import * as serviceWorker from 'serviceWorker';
@@ -15,21 +15,17 @@ registerLicense('Ngo9BigBOggjHTQxAR8/V1NGaF1cWGhAYVVpR2NbfE55fldAal1XVAciSV9jS31
 // style + assets
 import 'assets/scss/style.scss';
 import config from './config';
-import React from 'react';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
 
 const container = document.getElementById('root');
-
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(
-  <React.StrictMode>
-    <ReduxProvider store={store}>
-      <BrowserRouter basename={config.basename}>
-        <App />
-      </BrowserRouter>
-    </ReduxProvider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter basename={config.basename}>
+      <App />
+    </BrowserRouter>
+  </Provider>
 );
 
 // If you want your app to work offline and load faster, you can change

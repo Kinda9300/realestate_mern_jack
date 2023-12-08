@@ -253,35 +253,35 @@ const tablecomp = () => {
 
 const whether = () => {
     const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
-    const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
-    const xLabels = [
-    'Page A',
-    'Page B',
-    'Page C',
-    'Page D',
-    'Page E',
-    'Page F',
-    'Page G',
-    ];
+const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
+const xLabels = [
+  'Page A',
+  'Page B',
+  'Page C',
+  'Page D',
+  'Page E',
+  'Page F',
+  'Page G',
+];
     return (
         <LineChart
-            width={500}
-            height={300}
-            series={[
-                { data: pData, label: 'pv', yAxisKey: 'leftAxisId' },
-                { data: uData, label: 'uv', yAxisKey: 'rightAxisId' },
-            ]}
-            xAxis={[{ scaleType: 'point', data: xLabels }]}
-            yAxis={[{ id: 'leftAxisId' }, { id: 'rightAxisId' }]}
-            rightAxis="rightAxisId"
-        />
+      width={500}
+      height={300}
+      series={[
+        { data: pData, label: 'pv', yAxisKey: 'leftAxisId' },
+        { data: uData, label: 'uv', yAxisKey: 'rightAxisId' },
+      ]}
+      xAxis={[{ scaleType: 'point', data: xLabels }]}
+      yAxis={[{ id: 'leftAxisId' }, { id: 'rightAxisId' }]}
+      rightAxis="rightAxisId"
+    />
     )
 }
 
 export const Long = () => {
     return (
         <div className='report-content-content'>
-            <div className="report-content-content-header" id="item-7">
+            <div className="report-content-content-header" id="item-6">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" >
                     <rect width="256" height="256" fill="none"></rect>
                     <path d="M141.4,132.6a28,28,0,1,0-26.8,0l-13.8,32.2a8,8,0,0,0,7.3,11.2h39.8a8,8,0,0,0,7.3-11.2Z" opacity="0.2"></path>
@@ -290,21 +290,21 @@ export const Long = () => {
                 </svg>
                 <span>Long-Term Rental Potential</span>
             </div>
-            <div className="permit-accordian-div" id="item-7-1">
+            <div className="permit-accordian-div" id="item-5-3">
                 <AccordionComponent>
                     <AccordionItemsDirective>
-                        <AccordionItemDirective header="Long-Term Rental Potential" content={childcomp} />
+                        <AccordionItemDirective header="Flood Data Details" content={childcomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" id="item-7-2">
+            <div className="permit-accordian-div" id="item-5-4">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header="Average Daily Weather" content={whether} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" id="item-7-3">
+            <div className="permit-accordian-div" >
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header="Long-Term Rental Listings" content={tablecomp} />

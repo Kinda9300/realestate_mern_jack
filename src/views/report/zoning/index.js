@@ -1,73 +1,111 @@
-import './index.css';
+import "./index.css";
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 
-// import GoogleMapReact from 'google-map-react';
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import GoogleMapReact from 'google-map-react';
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const childcomp = () => {
-  return (
-    <div className="childcomp-div">
-      <div className="zoning-part">
-        <span>Accessory Dwelling unit</span>
-      </div>
-      <div className="zoning-part">
-        <span>Adult day care</span>
-      </div>
-      <div className="zoning-part">
-        <span>Assembly hall</span>
-      </div>
-      <div className="zoning-part">
-        <span>Bank</span>
-      </div>
-      <div className="zoning-part"><span>Beauty and Barber Shop</span></div>
-      <div className="zoning-part"><span>Bed and Breakfast</span></div>
-      <div className="zoning-part"><span>Child Care Home</span></div>
-      <div className="zoning-part"><span>Child care facility</span></div>
-      <div className="zoning-part"><span>Conservation lot</span></div>
-      <div className="zoning-part"><span>Conversion Of Existing Dwelling To Accommodate not more than 2 units</span></div>
-      <div className="zoning-part"><span>Dwelling 2 Family</span></div>
-      <div className="zoning-part"><span>Dwelling 3 to 4 Family</span></div>
-      <div className="zoning-part"><span>Educational institution k 12</span></div>
-      <div className="zoning-part"><span>Farm</span></div>
-      <div className="zoning-part"><span>Farm Animals For Family Use for non commercial purposes on lots containing a one or Two Family Dwelling</span></div>
-      <div className="zoning-part"><span>Office</span></div>
-      <div className="zoning-part"><span>Personal service establishment</span></div>
-      <div className="zoning-part"><span>Public Recreation</span></div>
-      <div className="zoning-part"><span>Public Utility</span></div>
-      <div className="zoning-part"><span>Retail On site</span></div>
-    </div>
-  )
-}
+    return (
+        <div className="childcomp-div">
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
 
+        </div>
+    )
+}
 const childcomp1 = () => {
     return (
         <div className="childcomp-div">
-            <div className="zoning-part"><span>Assisted living facility</span></div>
-            <div className="zoning-part"><span>Congregate care facility</span></div>
-            <div className="zoning-part"><span>Continuing care Community Facility</span></div>
-            <div className="zoning-part"><span>Educational Institutional post secondary</span></div>
-            <div className="zoning-part"><span>Elderly assisted care home</span></div>
-            <div className="zoning-part"><span>Helicopter Take Offs and Landings</span></div>
-            <div className="zoning-part"><span>Nursing Home</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
 
         </div>
     )
 }
-
 const infocomp = () => {
     return (
-        <div className="childcomp-div">
-            <div className="zoning-part lx space-between"><span>Zone Type</span><span>Residential</span></div>
-            <div className="zoning-part lx space-between"><span>Zone Subtype</span><span>Multi Family</span></div>
-            <div className="zoning-part lx space-between"><span>Zone Name</span><span>Low Density Residental</span></div>
-            <div className="zoning-part lx space-between"><span>Zone Code</span><span>R-20</span></div>
-            <div className="zoning-part lx space-between"><span>Zone Code Link</span><span><a>Link</a></span></div>
-            <div className="zoning-part lx space-between"><span>Zone Type</span><span>Residential</span></div>       
+<div className="childcomp-div">
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
+            <div className="zoning-part"><span>Accessory Dwelling unit</span></div>
         </div>
     )
 }
-
 const tablecomp = () => {
     return (
                        
@@ -81,21 +119,19 @@ const tablecomp = () => {
     )
 }
 
-
-
 export const Zoning = () => {
-
-    // const defaultProps = {
-    //     center: {
-    //       lat: 10.99835602,
-    //       lng: 77.01502627
-    //     },
-    //     zoom: 11
-    //   };
+  
+    const defaultProps = {
+        center: {
+          lat: 10.99835602,
+          lng: 77.01502627
+        },
+        zoom: 11
+      };
 
     return (
         <div className="report-content-content">
-            <div className="report-content-content-header" id="item-4">
+            <div className="report-content-content-header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256" >
                     <rect width="256" height="256" fill="none"></rect><polygon points="160 216 96 184 96 40 160 72 160 216" opacity="0.2"></polygon>
                     <polyline points="96 184 32 200 32 56 96 40" fill="none" stroke="#5C53C5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></polyline>
@@ -112,13 +148,8 @@ export const Zoning = () => {
             </div>
             <div>
                 <div id="map">
-<<<<<<< HEAD
-                {/* <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
-=======
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyD-keqBePy0D5zfeQe1n617aJ87q956NS4" }}
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
+                    bootstrapURLKeys={{ key: "AIzaSyA52qSFk7awgE8vvAo4U5-P0CUKe6wugk8" }}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
                 >
@@ -127,17 +158,17 @@ export const Zoning = () => {
                     lng={30.337844}
                     text="My Marker"
                     />
-                </GoogleMapReact> */}
+                </GoogleMapReact>
                 </div>
             </div>
-            <div className="permit-accordian-div" id="item-4-1">
+            <div className="permit-accordian-div">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective header='Zoning Uses' content={tablecomp} />
                     </AccordionItemsDirective>
                 </AccordionComponent>
             </div>
-            <div className="permit-accordian-div" id="item-4-2">
+            <div className="permit-accordian-div">
                 <AccordionComponent>
                     <AccordionItemsDirective>
                         <AccordionItemDirective id="zoning-info-div" header='Zoning Information' content={infocomp} />

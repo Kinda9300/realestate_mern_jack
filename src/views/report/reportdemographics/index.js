@@ -41,11 +41,7 @@ const tablecomp = () => {
 
 export const ReportDemographics = () => {
   return (
-<<<<<<< HEAD
-    <div className="report-content-content" id="item-12">
-=======
     <div className="report-content-content">
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
       <div className="report-content-content-header">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5C53C5" viewBox="0 0 256 256">
           <rect width="256" height="256" fill="none"></rect>
@@ -143,11 +139,7 @@ export const ReportDemographics = () => {
           ></path>
         </svg>
       </div>
-<<<<<<< HEAD
-      <div className="permit-accordian-div" id="item-12-1">
-=======
       <div className="permit-accordian-div">
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Income" content={tablecomp} />

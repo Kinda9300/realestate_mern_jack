@@ -1,70 +1,15 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 
-<<<<<<< HEAD
-//redux part
-import { useDispatch, useSelector } from 'react-redux';
-
-import { setValue } from '../../../store/slice/homeslice';
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 import './index.css';
 
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-react-navigations';
 import { Button, Typography } from '@mui/material';
-<<<<<<< HEAD
-// import { PlunkMarketInsightChart } from './plunkMarektInsightChart';
-import { HomeCompareChart } from './homeCompareChart';
-import { PlunkReModelValueChart } from './plunkRemodelValueChart';
-import { useEffect } from 'react';
-import axios from 'axios';
-
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-
-const PlunkHomeValue = () => {
-  // const [homeprice ,setHomeprice] = useState("");
-
-
-  const dispatch = useDispatch();
-  const { value } = useSelector((state) => state.home);
-
-  const addressObj = {
-    fips: '04013',
-    apn: '301-55-105',
-    addressLineOne: '11635 S MOHAVE ST',
-    aptNum: '',
-    city: 'PHOENIX',
-    state: 'AZ',
-    zipcode: '85044'
-  };
-
-
-  useEffect(() => {
-    axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
-      dispatch(setValue(res.data));
-    });
-   
-  }, [dispatch]);
-
-  useEffect(() => {
-    console.log(value);
-    // setHomeprice(value.valuation_dollars);
-  }, [value]);
-
-
-=======
 import { PlunkMarketInsightChart } from './plunkMarektInsightChart';
 import { HomeCompareChart } from './homeCompareChart';
 import { PlunkReModelValueChart } from './plunkRemodelValueChart';
 
 const PlunkHomeValue = () => {
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -89,21 +34,13 @@ const PlunkHomeValue = () => {
         }}
       >
         <Box
-<<<<<<< HEAD
-          id="numberpart1"
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
           sx={{
             color: 'black',
             fontSize: '30px',
             marginBottom: '15px'
           }}
         >
-<<<<<<< HEAD
-          $417722.54
-=======
           $999,440.32
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         </Box>
         <Box
           sx={{
@@ -128,25 +65,6 @@ const PlunkHomeValue = () => {
   );
 };
 const PlunkMarketInsight = () => {
-<<<<<<< HEAD
-  // const dispatch = useDispatch();
-
-  // const [insightarr, setInsightarr] = useState([]);
-  // const { insights } = useSelector(state => state.home?state.home: "");
-  // const measure = 'days_of_inventory_count';
-  // const region_type = 'zipcode';
-
-  // useEffect(() => {
-  //   axios.get('http://localhost:7000/api/market-insights/' + measure + '/' + region_type + '?region_id=85044').then((res) => {
-  //     dispatch(setInsight(res.data));
-  //   });
-  // }, [dispatch]);
-  // useEffect(() => {
-  //   setInsightarr(!insights.values ? "" : insights.values);
-  // }, [insights])
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -173,76 +91,14 @@ const PlunkMarketInsight = () => {
       >
         for 98115 - August 2nd, 2023
       </Box>
-<<<<<<< HEAD
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} id="fixed-high-table" aria-label="simple table">
-          <TableBody>
-            {/* {
-            !insightarr? "" : insightarr.map((data, key) => (
-              <TableRow
-                key={key}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                <TableCell align="left">
-                  <p className="mb-xs">{data.date}</p>
-                  <p className="mb-xs font-size-xs">Valuation</p>
-                </TableCell>
-                <TableCell align="left">
-                  <p className="mb-xs">${data.value}</p>
-                  <p className="mb-xs font-size-xs">Min</p>
-                </TableCell>
-            </TableRow>
-            ))
-            } */}
-            <TableRow
-              key="0" sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-              <TableCell  scope="row">
-                <p className="mb-xs">2023-09-01</p>
-                <p className="mb-xs font-size-xs">Valuation</p>
-              </TableCell>
-              <TableCell className="hidden-th" align="left">
-                <p className="mb-xs">365</p>
-                <p className="mb-xs font-size-xs">Min</p>
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
-      {/* <PlunkMarketInsightChart id="insig"/> */}
-=======
       <PlunkMarketInsightChart />
       <PlunkMarketInsightChart />
       <PlunkMarketInsightChart />
       <PlunkMarketInsightChart />
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
     </Box>
   );
 };
 const PlunkHomeCompare = () => {
-<<<<<<< HEAD
-
-  // const addressObj = {
-  //   fips: '04013',
-  //   apn: '301-55-105',
-  //   addressLineOne: '11635 S MOHAVE ST',
-  //   aptNum: '',
-  //   city: 'PHOENIX',
-  //   state: 'AZ',
-  //   zipcode: '85044'
-  // };
-  // const dispatch = useDispatch();
-
-  // // const [homecompares, setHomecompares] = useState([])
-  // useEffect(() => {
-  //   axios.post('http://localhost:7000/api/home-compare', addressObj).then((res) => {
-  //     console.log(res.data);  
-  //     dispatch(setCompare(res.data));
-  //   });
-  // }, [dispatch]);
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
   return (
     <Box
       sx={{
@@ -276,10 +132,6 @@ const PlunkHomeCompare = () => {
 const PlunkRemodelValue = () => {
   return (
     <Box
-<<<<<<< HEAD
-      id="plunk-remodal"
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
       sx={{
         borderRadius: 8,
         padding: 10,
@@ -297,10 +149,6 @@ const PlunkRemodelValue = () => {
         Plunk Remodel Value™
       </Box>
       <Box
-<<<<<<< HEAD
-        id="plunk-remodal-container"
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         sx={{
           display: 'flex',
           justifyContent: 'space-between'
@@ -330,10 +178,6 @@ const PlunkRemodelValue = () => {
               Plunk Remodel Value™
             </Typography>
             <Typography
-<<<<<<< HEAD
-              id="numberpart"
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
               sx={{
                 color: 'black',
                 fontSize: '30px'
@@ -399,13 +243,6 @@ const PlunkRemodelValue = () => {
   );
 };
 
-<<<<<<< HEAD
-const remodal = () => {
-  axios.post('http://localhost:7000/api/home-value', addressObj).then((res) => {
-    dispatch(setValue(res.data));
-  });
-};
-
 export const MarketTrends = () => {
   return (
     <div className="report-content-content" id="item-14">
@@ -413,59 +250,34 @@ export const MarketTrends = () => {
         <span>Market Trends - Dover, NH (03820)</span>
       </div>
       <div className="permit-accordian-div" id="item-14-1">
-=======
-export const MarketTrends = () => {
-  return (
-    <div className="report-content-content">
-      <div className="report-content-content-header">
-        <span>Market Trends - Dover, NH (03820)</span>
-      </div>
-      <div className="permit-accordian-div">
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Home Value™" content={PlunkHomeValue} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
-<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-2">
-=======
-      <div className="permit-accordian-div">
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Market Insights™" content={PlunkMarketInsight} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
-<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-3">
-=======
-      <div className="permit-accordian-div">
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
         <AccordionComponent>
           <AccordionItemsDirective>
             <AccordionItemDirective header="Home Compare" content={PlunkHomeCompare} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
-<<<<<<< HEAD
       <div className="permit-accordian-div" id="item-14-4">
-        <AccordionComponent onClick={remodal}>
-=======
-      <div className="permit-accordian-div">
         <AccordionComponent>
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
           <AccordionItemsDirective>
             <AccordionItemDirective header="Plunk Remodel Value™" content={PlunkRemodelValue} />
           </AccordionItemsDirective>
         </AccordionComponent>
       </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
       <div className="font-size-xs gray-dark mt-s mb-s">Source(s): Zoneomics</div>
     </div>
   );

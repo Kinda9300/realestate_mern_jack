@@ -5,10 +5,6 @@
     background-color: white;
     padding: 30px 30px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 .risk-div {
     flex: 6;
     display: flex;
@@ -16,24 +12,12 @@
     align-items: center;
     justify-content: center;
 }
-<<<<<<< HEAD
-
-.summary-div {
-    flex: 4;
-}
-
-.lx {
-    display: flex;
-}
-
-=======
 .summary-div {
     flex: 4;
 }
 .lx {
     display: flex;
 }
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 .radio-div {
     width: 10px;
     height: 10px;
@@ -46,87 +30,16 @@
     align-items: center;
     column-gap: 0.5rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 .relative-span {
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 .overal-span {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400px;
 }
-<<<<<<< HEAD
-
-.c-g-s {
-    column-gap: 0.5rem;
-}
-
-#acrdn_panel_9 {
-    background-color: white;
-}
-
-#env-parent {
-    padding-left: 0px;
-}
-
-#acrdn_header_6 {
-    background-color: #f0eeff;
-}
-
-
-@media screen and (max-width: 800px) {
-    .css-1o42tkx {
-        padding: 10px !important;
-    }
-
-    .css-gg4vpm {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .css-1afcqb7 {
-        width: 100%;
-        text-align: center;
-    }
-
-    #numberpart1 {
-        font-size: 20px;
-    }
-
-    #numberpart {
-        font-size: 20px;
-        color: white;
-    }
-
-    #plunk-remodal {
-        text-align: center;
-    }
-
-    #plunk-remodal-container {
-        text-align: center;
-    }
-
-    .css-126n10b {
-        display: none;
-    }
-
-    .css-1kfvdq9-MuiTable-root {
-        min-width: 180px;
-    }
-
-    .css-phgkob-MuiPaper-root-MuiTableContainer-root {
-        height: 400px;
-    }
-=======
 .c-g-s {
     column-gap: 0.5rem;
 }
@@ -138,5 +51,4 @@
 }
 #acrdn_header_6 {
     background-color: #f0eeff;
->>>>>>> c7071611c34408381ddfdf10741f4ffac1545531
 }

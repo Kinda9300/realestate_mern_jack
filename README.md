@@ -1,11 +1,8 @@
-# Getting Started with Create React App fir Son
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-<!-- Something for test ip tracking -->
-<!-- now trying to check the ip -->
 
 In the project directory, you can run:
 
